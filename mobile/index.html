@@ -76,10 +76,10 @@
                      controller:'CustomersController',
                      templateUrl: 'app/views/main.html'
                    })
-                 .when('/experience',
+                 .when('/book',
                    {
-                     controller: 'ExperienceController',
-                     templateUrl: 'app/views/experience.html'
+                     controller: 'BookController',
+                     templateUrl: 'app/views/book.html'
                    })
                    .when('/request',
                      {
@@ -107,7 +107,7 @@
                       templateUrl: 'app/views/adam.html'
                     })
                });
-               app.controller('ExperienceController', function($scope){
+               app.controller('BookController', function($scope){
                  $scope.customerID = 5;
                });
                app.controller('RequestController', function($scope){
